@@ -13,8 +13,10 @@ function App(){
       <section className = 'container'>
         <h2>{people.length} birthdays </h2>
         <List people = {people} />
-        <button className="btn" onClick={()=>console.log('you clicked me')}>
-          ADD
+        <button className="btn" onClick={()=>
+          SetPeople([])
+        }>
+          Clear All
         </button>
       </section>
     </main>
